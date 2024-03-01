@@ -1,0 +1,435 @@
+{
+    "JavaScript": [
+      {
+        "id": "1",
+        "question": "What does 'DOM' stand for in JavaScript?",
+        "answer": "Document Object Model",
+        "example": "Accessing and manipulating HTML elements using JavaScript.",
+        "hint": "Think about how JavaScript interacts with the structure of a webpage."
+      },
+      {
+        "id": "2",
+        "question": "How do you declare a variable in JavaScript?",
+        "answer": "Using 'var', 'let', or 'const' keyword.",
+        "example": "let myVariable = 10;",
+        "hint": "There are multiple ways to declare variables in JavaScript. What are they?"
+      },
+      {
+        "id": "3",
+        "question": "What is the purpose of 'console.log()'?",
+        "answer": "Output information to the console for debugging.",
+        "example": "console.log('Hello, World!');",
+        "hint": "This function is commonly used for debugging. What does it do?"
+      },
+      {
+        "id": "4",
+        "question": "What is an array in JavaScript?",
+        "answer": "A data structure that stores a collection of elements.",
+        "example": "let colors = ['red', 'green', 'blue'];",
+        "hint": "Think about a way to store multiple values in a single variable."
+      },
+      {
+        "id": "5",
+        "question": "Explain the difference between '==' and '===' in JavaScript.",
+        "answer": "'==' checks for equality, while '===' checks for both value and type equality.",
+        "example": "5 == '5' is true, but 5 === '5' is false.",
+        "hint": "What is the difference between loose and strict equality?"
+      },
+      {
+        "id": "6",
+        "question": "What is the purpose of the 'function' keyword in JavaScript?",
+        "answer": "Declares a function in JavaScript.",
+        "example": "function addNumbers(a, b) { return a + b; }",
+        "hint": "How do you define reusable blocks of code in JavaScript?"
+      },
+      {
+        "id": "7",
+        "question": "How do you comment in JavaScript?",
+        "answer": "Using '//' for single-line comments and '/* */' for multi-line comments.",
+        "example": "// This is a single-line comment\n/* This is a\n   multi-line comment */",
+        "hint": "What syntax is used to add comments to your code in JavaScript?"
+      },
+      {
+        "id": "8",
+        "question": "What is an arrow function in JavaScript?",
+        "answer": "A concise way to write function expressions.",
+        "example": "const add = (a, b) => a + b;",
+        "hint": "How can you write a shorter syntax for a function in JavaScript?"
+      },
+      {
+        "id": "9",
+        "question": "Explain the purpose of the 'this' keyword in JavaScript.",
+        "answer": "Refers to the current object.",
+        "example": "const person = { name: 'John', greet: function() { console.log('Hello, ' + this.name + '!'); } };",
+        "hint": "What does 'this' refer to in the context of an object method?"
+      },
+      {
+        "id": "10",
+        "question": "How do you iterate over an array in JavaScript?",
+        "answer": "Using loops like 'for' or array methods like 'forEach'.",
+        "example": "const numbers = [1, 2, 3]; for (let i = 0; < numbers.length; i++) { console.log(numbers[i]); }",
+        "hint": "What are some ways to go through each element of an array in JavaScript?"
+      },
+      {
+        "id": "11",
+        "question": "What is the purpose of the 'let' keyword in JavaScript?",
+        "answer": "Declares a block-scoped variable.",
+        "example": "let x = 5;",
+        "hint": "How does 'let' differ from 'var' in terms of scope?"
+      },
+      {
+        "id": "12",
+        "question": "How do you add a class to an HTML element using JavaScript?",
+        "answer": "Using the 'classList' property and the 'add' method.",
+        "example": "document.getElementById('myElement').classList.add('newClass');",
+        "hint": "What property and method can you use to manipulate the classes of an HTML element?"
+      },
+      {
+        "id": "13",
+        "question": "What is the purpose of 'async/await' keywords in JavaScript?",
+        "answer": "Used to work with promises in a more synchronous way.",
+        "example": "async function fetchData() { const response = await fetch('https://api.example.com/data'); const data = await response.json(); console.log(data); }",
+        "hint": "How can you make asynchronous code look and behave more like synchronous code?"
+      },
+      {
+        "id": "14",
+        "question": "Explain the concept of event delegation in JavaScript.",
+        "answer": "Handling events on parent elements rather than individual child elements.",
+        "example": "<ul id='myList'><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
+        "hint": "How can you optimize event handling for dynamically added elements?"
+      },
+      {
+        "id": "15",
+        "question": "What is the purpose of 'localStorage' in JavaScript?",
+        "answer": "Provides a way to store key/value pairs in the browser.",
+        "example": "localStorage.setItem('user', 'John'); const storedUser = localStorage.getItem('user');",
+        "hint": "How can you store persistent data on the client side in a web browser?"
+      },
+      {
+        "id": "16",
+        "question": "How do you handle errors in JavaScript?",
+        "answer": "Using 'try', 'catch', and 'finally' blocks.",
+        "example": "try { /* Code that might throw an error */ } catch (error) { /* Handle the error */ } finally { /* Code that will always run */ }",
+        "hint": "What constructs allow you to gracefully handle errors in your code?"
+      },
+      {
+        "id": "17",
+        "question": "What is the purpose of the 'fetch' API in JavaScript?",
+        "answer": "Allows making HTTP requests in a more modern and flexible way.",
+        "example": "fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data)).catch(error => console.error('Error:', error));",
+        "hint": "How can you make asynchronous HTTP requests in a more convenient manner?"
+      },
+      {
+        "id": "18",
+        "question": "How do you create a timer in JavaScript?",
+        "answer": "Using 'setTimeout' or 'setInterval' functions.",
+        "example": "setTimeout(() => { console.log('Delayed message'); }, 2000);",
+        "hint": "What functions can you use to execute code after a specified delay or at intervals?"
+      },
+      {
+        "id": "19",
+        "question": "What is the purpose of the 'map' function in JavaScript?",
+        "answer": "Creates a new array by applying a function to each element of an existing array.",
+        "example": "const numbers = [1, 2, 3]; const doubled = numbers.map(num => num * 2);",
+        "hint": "How can you transform each element of an array into a new array based on a provided function?"
+      },
+      {
+        "id": "20",
+        "question": "Explain the concept of closures in JavaScript.",
+        "answer": "Functions that have access to variables from their outer scope.",
+        "example": "function outerFunction() { const outerVariable = 'I am from the outer function'; function innerFunction() { console.log(outerVariable); } return innerFunction; }",
+        "hint": "What allows a function to retain access to variables from the scope in which it was created?"
+      },
+      {
+        "id": "301f",
+        "question": "test",
+        "hint": "test",
+        "answer": "test",
+        "example": "test"
+      }
+    ],
+    "HTML": [
+      {
+        "id": "21",
+        "question": "What does 'HTML' stand for?",
+        "answer": "Hypertext Markup Language",
+        "example": "Creating the structure of a web page.",
+        "hint": "Think about the fundamental purpose of HTML in structuring content for the web."
+      },
+      {
+        "id": "22",
+        "question": "How do you create a hyperlink in HTML?",
+        "answer": "<a href='https://example.com'>Link Text</a>",
+        "example": "don't forget to defer!",
+        "hint": "Consider the HTML tag used to create links and the required attributes."
+      },
+      {
+        "id": "23",
+        "question": "What is the purpose of the `<head>` element in HTML?",
+        "answer": "Contains meta-information about the HTML document.",
+        "example": "<head><title>My Web Page</title></head>",
+        "hint": "Think about where meta-information and document-wide settings are placed in an HTML document."
+      },
+      {
+        "id": "24",
+        "question": "How do you add an image to an HTML document?",
+        "answer": "<img src='image.jpg' alt='Description'>",
+        "example": "Naming the <alt> the name of the image is a good practice",
+        "hint": "Consider the HTML tag used to embed images and its required attributes."
+      },
+      {
+        "id": "25",
+        "question": "What is the purpose of the `<div>` element in HTML?",
+        "answer": "Used to group other HTML elements together.",
+        "example": "<div><p>Paragraph 1</p><p>Paragraph 2</p></div>",
+        "hint": "Think about how the `<div>` element is commonly used for structuring and grouping content."
+      },
+      {
+        "id": "26",
+        "question": "How do you create an ordered list in HTML?",
+        "answer": "<ol><li>Item 1</li><li>Item 2</li><li>Item 3</li></ol>",
+        "example": "ol is what makes your li ordered!",
+        "hint": "Consider the HTML tag used to create ordered lists and its structure."
+      },
+      {
+        "id": "27",
+        "question": "What is the purpose of the `<meta>` tag in HTML?",
+        "answer": "Provides metadata about the HTML document.",
+        "example": "<meta charset='UTF-8'>",
+        "hint": "Think about where character encoding and other metadata are specified in an HTML document."
+      },
+      {
+        "id": "28",
+        "question": "How do you create a form in HTML?",
+        "answer": "<form action='/submit' method='post'><label for='username'>Username:</label><input type='text' id='username' name='username'><input type='submit' value='Submit'></form>",
+        "example": "don't forget to use e.target.[identifier].value to pull data from a form",
+        "hint": "Consider the HTML tags used to create forms and their attributes for defining form behavior."
+      },
+      {
+        "id": "29",
+        "question": "Explain the difference between `<div>` and `<span>` in HTML.",
+        "answer": "`<div>` is a block-level element, and `<span>` is an inline element.",
+        "example": "<div>Block-level element</div><span>Inline element</span>",
+        "hint": "Think about the default display behavior of `<div>` and `<span>` and how they are used in layout."
+      },
+      {
+        "id": "30",
+        "question": "What is the purpose of the `<a>` element in HTML?",
+        "answer": "Defines a hyperlink.",
+        "example": "<a href='https://example.com'>Visit Example.com</a>",
+        "hint": "Consider the HTML tag used to create hyperlinks and its attributes for specifying the destination URL."
+      },
+      {
+        "id": "31",
+        "question": "How do you create a table in HTML?",
+        "answer": "<table><tr><th>Header 1</th><th>Header 2</th></tr><tr><td>Data 1</td><td>Data 2</td></tr></table>",
+        "example": "creating ID's can be good for click events",
+        "hint": "Think about the HTML tags used to create tables, rows, and cells."
+      },
+      {
+        "id": "32",
+        "question": "What is the purpose of the `<footer>` element in HTML?",
+        "answer": "Represents the footer of a section or page.",
+        "example": "<footer>&copy; 2024 My Website</footer>",
+        "hint": "Consider where footer content, such as copyright information, is typically placed in an HTML document."
+      },
+      {
+        "id": "33",
+        "question": "How do you add a background color to an element in HTML?",
+        "answer": "Using the `style` attribute or external CSS.",
+        "example": "<div style='background-color: #ffeecc;'>Colored Div</div>",
+        "hint": "Think about how inline styles or external stylesheets can be used to apply background colors."
+      },
+      {
+        "id": "34",
+        "question": "What is the purpose of the `<iframe>` element in HTML?",
+        "answer": "Embeds another document within the current HTML document.",
+        "example": "<iframe src='https://example.com' width='600' height='400'></iframe>",
+        "hint": "Consider scenarios where you want to embed content from another source within your HTML document."
+      },
+      {
+        "id": "35",
+        "question": "How do you create a line break in HTML?",
+        "answer": "Using the `<br>` tag.",
+        "example": "This is a line<br>break.",
+        "hint": "Think about the HTML tag used to create line breaks within text."
+      },
+      {
+        "id": "36",
+        "question": "What is the purpose of the `<abbr>` element in HTML?",
+        "answer": "Defines an abbreviation or acronym with an optional description.",
+        "example": "<abbr title='Hypertext Markup Language'>HTML</abbr>",
+        "hint": "Consider scenarios where you want to provide a full explanation for an abbreviation or acronym."
+      },
+      {
+        "id": "37",
+        "question": "How do you create a dropdown list in HTML?",
+        "answer": "<select><option value='option1'>Option 1</option><option value='option2'>Option 2</option></select>",
+        "example": "don't forget to name your options for easier selection",
+        "hint": "Think about the HTML tags used to create dropdown lists and their structure."
+      },
+      {
+        "id": "38",
+        "question": "Explain the purpose of the `data-*` attributes in HTML.",
+        "answer": "Allows storing extra information on HTML elements.",
+        "example": "<div data-userid='123'>User 123</div>",
+        "hint": "Consider scenarios where you want to associate custom data with HTML elements."
+      },
+      {
+        "id": "39",
+        "question": "What is the purpose of the `<nav>` element in HTML?",
+        "answer": "Represents a navigation menu.",
+        "example": "<nav><a href='/home'>Home</a><a href='/about'>About</a></nav>",
+        "hint": "Think about where navigation links are typically placed in an HTML document."
+      },
+      {
+        "id": "40",
+        "question": "How do you create a comment in HTML?",
+        "answer": "<!-- This is a comment -->",
+        "example": "<!-- This will be anything you type -->",
+        "hint": "Think about the syntax for creating comments in HTML."
+      }
+    ],
+    "CSS": [
+      {
+        "id": "41",
+        "question": "What does 'CSS' stand for?",
+        "answer": "Cascading Style Sheets",
+        "example": "Styling the presentation of a web page.",
+        "hint": "Think about the purpose of CSS in styling the appearance of HTML elements."
+      },
+      {
+        "id": "42",
+        "question": "How do you apply an external CSS file to an HTML document?",
+        "answer": "<link rel='stylesheet' type='text/css' href='styles.css'>",
+        "example": "don't forget you might need ./ instead of just / if your src is in a different folder",
+        "hint": "Consider the HTML tag used to link an external CSS file to an HTML document."
+      },
+      {
+        "id": "43",
+        "question": "What is the purpose of the `box-sizing` property in CSS?",
+        "answer": "Defines how the size of an element is calculated, including padding and border.",
+        "example": "box-sizing: border-box;",
+        "hint": "Think about how `box-sizing` affects the total size of an element."
+      },
+      {
+        "id": "44",
+        "question": "How do you center an element horizontally in CSS?",
+        "answer": "Using `margin: auto;` or `text-align: center;`.",
+        "example": "div { margin: auto; }",
+        "hint": "Consider the CSS properties and values used to center block-level and inline-level elements horizontally."
+      },
+      {
+        "id": "45",
+        "question": "What is the purpose of the `flexbox` layout in CSS?",
+        "answer": "Provides a flexible and efficient way to layout items within a container.",
+        "example": "display: flex; justify-content: space-between;",
+        "hint": "Think about how `flexbox` simplifies the creation of complex layouts in CSS."
+      },
+      {
+        "id": "46",
+        "question": "How do you change the text color of an element in CSS?",
+        "answer": "Using the `color` property.",
+        "example": "p { color: blue; }",
+        "hint": "Consider the CSS property used to set the color of text within an element."
+      },
+      {
+        "id": "47",
+        "question": "What is the purpose of the `z-index` property in CSS?",
+        "answer": "Specifies the stack order of an element.",
+        "example": "position: absolute; z-index: 1;",
+        "hint": "Think about how `z-index` affects the positioning of elements in the stacking order."
+      },
+      {
+        "id": "48",
+        "question": "How do you apply a hover effect to an element in CSS?",
+        "answer": "Using the `:hover` pseudo-class.",
+        "example": "a:hover { color: red; }",
+        "hint": "Consider the CSS pseudo-class used to apply styles when an element is hovered over."
+      },
+      {
+        "id": "49",
+        "question": "Explain the difference between `padding` and `margin` in CSS.",
+        "answer": "`Padding` is the space inside the border, and `margin` is the space outside the border.",
+        "example": "div { padding: 10px; margin: 10px; }",
+        "hint": "Think about how `padding` and `margin` contribute to the spacing of elements."
+      },
+      {
+        "id": "50",
+        "question": "What is the purpose of the `media query` in CSS?",
+        "answer": "Applies styles based on the characteristics of the device or viewport.",
+        "example": "@media (max-width: 600px) { body { font-size: 14px; } }",
+        "hint": "Consider how `media queries` are used for responsive web design."
+      },
+      {
+        "id": "51",
+        "question": "How do you hide an element in CSS?",
+        "answer": "Using `display: none;` or `visibility: hidden;`.",
+        "example": "div { display: none; }",
+        "hint": "Consider the CSS properties used to hide elements with and without preserving space."
+      },
+      {
+        "id": "52",
+        "question": "What is the purpose of the `transition` property in CSS?",
+        "answer": "Adds a smooth transition effect to changes in property values.",
+        "example": "transition: width 2s;",
+        "hint": "Think about how `transition` enhances the visual experience by animating property changes."
+      },
+      {
+        "id": "53",
+        "question": "How do you select all paragraphs with a class of 'intro' in CSS?",
+        "answer": "`.intro` or `p.intro`.",
+        "example": ".intro { font-weight: bold; }",
+        "hint": "Consider the CSS selectors used to target elements with specific classes."
+      },
+      {
+        "id": "54",
+        "question": "What is the purpose of the `position` property in CSS?",
+        "answer": "Specifies the positioning method used for an element.",
+        "example": "position: relative;",
+        "hint": "Think about how `position` determines the positioning of an element within its containing element."
+      },
+      {
+        "id": "55",
+        "question": "How do you apply a gradient background to an element in CSS?",
+        "answer": "Using the `linear-gradient` or `radial-gradient` property.",
+        "example": "background: linear-gradient(to right, red, yellow);",
+        "hint": "Consider the CSS properties used to create gradient backgrounds."
+      },
+      {
+        "id": "56",
+        "question": "What is the purpose of the `clearfix` hack in CSS?",
+        "answer": "Clears the floated elements within a container.",
+        "example": ".clearfix::after { content: ''; display: table; clear: both; }",
+        "hint": "Think about how the `clearfix` hack resolves issues with floated elements and container height."
+      },
+      {
+        "id": "57",
+        "question": "How do you select the first child of an element in CSS?",
+        "answer": ":first-child",
+        "example": "p:first-child { font-weight: bold; }",
+        "hint": "Consider the CSS pseudo-class used to select the first child of a parent element."
+      },
+      {
+        "id": "58",
+        "question": "What is the purpose of the `font-family` property in CSS?",
+        "answer": "Defines the preferred font for an element.",
+        "example": "body { font-family: 'Arial', sans-serif; }",
+        "hint": "Think about how `font-family` is used to specify the typeface or font family for text."
+      },
+      {
+        "id": "59",
+        "question": "How do you apply a shadow to text in CSS?",
+        "answer": "Using the `text-shadow` property.",
+        "example": "h1 { text-shadow: 2px 2px 4px #000000; }",
+        "hint": "Consider the CSS property used to add a shadow effect to text."
+      },
+      {
+        "id": "60",
+        "question": "Explain the purpose of the `box-shadow` property in CSS.",
+        "answer": "Adds a shadow effect to an element, including its border and background.",
+        "example": "box-shadow: 4px 4px 8px #999999;",
+        "hint": "Think about how `box-shadow` enhances the visual appearance of elements by adding a shadow."
+      }
+    ]
+  }
